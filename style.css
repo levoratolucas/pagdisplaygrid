@@ -1,0 +1,227 @@
+* {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: bold-italic;
+}
+
+
+
+footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.936);
+    border-top: solid white;
+}
+
+@media only screen and (min-width:481px) {
+    header {
+        z-index: 2;
+        position: sticky;
+        top: -200px;
+        background-color: rgba(0, 0, 0, 0.931);
+    }
+
+    .logo {
+        background-position: left;
+        background-image: url(/topo.png);
+        width: 100%;
+        height: 200px;
+    }
+
+    .menu {
+        position: sticky;
+        top: 0;
+        height: 50px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.100);
+        color: white;
+        justify-content: right;
+        display: flex;
+    }
+
+    .menu ul {
+        margin-top: 10px;
+        width: 500px;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        list-style: none;
+
+    }
+
+    .menu li {
+        width: 100px;
+        height: 30px;
+        margin-left: 30px;
+
+    }
+
+    .imag {
+        background-size: 100%;
+        background-image: url(/HTML5_logo_and_wordmark.svg.png);
+        width: 300px;
+        height: 300px;
+        float: right;
+    }
+
+    .corpo {
+        display: flex;
+
+    }
+
+    .secundaria {
+        background-color: rgba(0, 0, 0, 0.936);
+        width: 20%;
+        grid-column: 1;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        border-top: solid;
+        border-bottom: solid;
+
+    }
+
+    .principal {
+        width: 78%;
+        padding: 10px;
+
+    }
+
+    .contatos {
+        width: 2%;
+        border-top: solid white;
+        border-bottom: solid white;
+
+        background-color: rgba(0, 0, 0, 0.936);
+
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        background-position: left;
+        background-image: url(/topo.png);
+        width: 100%;
+        height: 200px;
+    }
+
+    .menu {
+        height: 150px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.936);
+        color: white;
+
+
+    }
+
+    .menu ul {
+        width: 20%;
+        margin-left: 0;
+        margin-top: 10px;
+        display: block;
+        margin: auto;
+        justify-content: center;
+
+        list-style: none;
+    }
+
+    .menu li {
+
+        height: 50px;
+        margin-left: 30px;
+
+    }
+
+    .corpo {
+
+        display: grid;
+        grid-template-rows: repeat(2);
+
+    }
+
+    main section {
+        border-top: solid;
+    }
+
+    .imag {
+
+        background-size: 100%;
+        background-image: url(/HTML5_logo_and_wordmark.svg.png);
+        width: 300px;
+        height: 300px;
+        margin: 20px auto 0 auto;
+        /* Colocar no final com uma margem superior */
+        float: none;
+        grid-row: 25;
+    }
+
+    .secundaria {
+        height: 200px;
+        border-top: solid;
+        grid-row: 2;
+
+    }
+
+    .principal {
+        padding: 10px;
+        border-top: solid;
+        min-width: 350px;
+        grid-row: 1;
+        display: grid;
+        grid-template-rows: repeat(24);
+    }
+
+}
+.galeria {
+    background-color: rgba(0, 0, 0, 0.936);
+    width: 100%;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3px;
+
+}
+
+.foto1 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 221445.png);
+    grid-row: 1/3;
+    grid-column: 1/3;
+    border: solid white;
+    border-radius: 10px;
+
+}
+
+.foto2 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 221321.png);
+    border-radius: 10px;
+    border: solid white;
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+
+.foto3 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 221911.png);
+    grid-row: 1/3;
+    grid-column: 3/5;
+    border: solid white;
+    border-radius: 10px;
+}
+
+.foto4 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 220657.png);
+    background-size: 100%;
+    border: solid;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.foto5 {
+    background-image: url(/Captura\ de\ tela\ 2023-10-16\ 221647.png);
+    grid-column: 1/3;
+    grid-row: 3/5;
+    border: solid white;
+    border-radius: 10px;
+}
